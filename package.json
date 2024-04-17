@@ -3,9 +3,16 @@
   "version": "2.4.6",
   "description": "百度AI开放平台Nodejs SDK, 文档以及详情请访问官网: https://ai.baidu.com",
   "main": "src/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
+    "preinstall": "npm run build",
+    "build": "tsc",
     "test": "mocha"
   },
+  "files": [
+    "src",
+    "types"
+  ],
   "author": "baidu-aip",
   "license": "Apache-2.0",
   "repository": {
@@ -17,10 +24,18 @@
     "iconv-lite": "^0.4.15",
     "keep-alive-agent": "0.0.1",
     "request": "^2.79.0",
-    "underscore": "^1.8.3"
+    "typescript": "^5.4.5"
   },
   "optionalDependencies": {
-    "should": "^13.2.0",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "should": "^13.2.0"
+  },
+  "devDependencies": {
+    "underscore": "^1.8.3",
+    "@types/node": "^20.12.7"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
