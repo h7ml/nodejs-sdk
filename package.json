@@ -1,6 +1,6 @@
 {
-  "name": "baidu-aip-sdk",
-  "version": "2.4.6",
+  "name": "@h7ml/baidu-aip-sdk",
+  "version": "2.4.7",
   "description": "百度AI开放平台Nodejs SDK, 文档以及详情请访问官网: https://ai.baidu.com",
   "main": "src/index.js",
   "types": "types/index.d.ts",
@@ -13,7 +13,7 @@
     "src",
     "types"
   ],
-  "author": "baidu-aip",
+  "author": "baidu-aip,h7ml",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
